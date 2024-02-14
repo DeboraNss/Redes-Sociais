@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+body {
+  background: url(../imagens/img1.jpg) no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+main {
+  height: 100vh;
+  position: relative;
+  
+}
+#ipad {
+  position: absolute; /*centralizar*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 692px;
+  width: 960px;
+  background: url('../imagens/ipad.png'); 
+}
+#tela {
+  position: relative;
+  top: 35px;
+  left: 36px;
+  width: 889px;
+  height: 624px;
+  border-radius: 17px 
+}
+section#redes-sociais {
+  text-align: left;
+}
+section#redes-sociais img {
+  height: 50px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px  5px rgba(0, 0, 0, 0.301);
+  box-sizing: border-box;
+}
+section#redes-sociais img:hover { /*novimento*/
+  border: 2px solid rgba(255, 255, 255, 0.637);
+  transform: translate(-3px, -3px);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+  transition: transform .3s, border 1s;
+}
+
